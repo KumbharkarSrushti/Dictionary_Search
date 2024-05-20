@@ -21,10 +21,6 @@ searchButton.addEventListener("click", function() {
                         display.innerHTML += `<p>${definitionText}</p>`;
                     }
                 }
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-            display.innerHTML = "Error fetching data. Please try again later.";
         });
+    })
 });
